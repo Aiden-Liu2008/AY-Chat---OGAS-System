@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  <script src="OGASsyt.js"></script>
+  <title>AYChat</title>
+</head>
+<body>
+
+<img src="logo1.png" style="width:250px;height:140px;">
+
+<script type="text/javascript">
+
+    var arr = [123, 17, 18];
+    document.oncontextmenu = new Function("event.returnValue=false;");
+
+    window.onkeydown = function (e) {
+        var keyCode = e.keyCode || e.which || e.charCode;
+        var ctrlKey = e.ctrlKey || e.metaKey;
+        console.log(keyCode + "--" + keyCode);
+        if (ctrlKey && keyCode == 85) {
+            e.preventDefault();
+        }
+        if (ctrlKey && keyCode == 83) {
+            e.preventDefault();
+        }
+        if (arr.indexOf(keyCode) > -1) {
+            e.preventDefault();
+        }
+        
+        if (window.event.ctrlKey && window.event.shiftKey && window.event.keyCode == 73) {
+            return false;
+        
+        } else if (window.event.shiftKey && window.event.keyCode == 121) {
+            return false;
+        }
+    }
+</script>
+
+  <h1>
+    <span>A</span>
+    <span>Y</span> 
+    <span>C</span>
+    <span>h</span>
+    <span>a</span>
+    <span>t</span>
+  </h1>
+  <h2>
+    A Bot For Your Friendship!
+  </h2>
+  <h3>
+    Don't know how to use it? click on <a href="This.html">This</a><br>
+  </h3>
+  <h4>↓Here is our background music↓</h4>
+  
+    <iframe frameborder="no" border="32" marginwidth="32" marginheight="32" width=85 height=86 src="//music.163.com/outchain/player?type=3&id=2505888841&auto=1&height=66" style="position:absolute; top:55%; left:47%;"></iframe>
+    
+  <form id="form" onsubmit="return false;">
+    <input style="position:absolute; top:65%; left:25%; width:50%; height: 8%; font-size: 160%;" type="text" id="userInput" placeholder = "Ask me anything, or just say hi!"/>
+    <input style="position:absolute; top:75%; left:35%; width:30%;" type="submit" onclick="submitInput();" />
+  </form>
+    
+  <script src="cal.js"></script>
+  <br><form id="form">
+    <input name = "ShowExpression" style = "position:absolute; top:85%; left:25%; width:50%; height: 5%; font-size: 160%;" type="text" readonly placeholder = "Portable Calculator"/>
+  </form>
+    <input type = "button" onclick = "setv(1)" value = "1" style = "position:absolute; top:80%; left:20%;"> 
+    <input type = "button" onclick = "setv(2)" value = "2" style = "position:absolute; top:80%; left:24%;"> 
+    <input type = "button" onclick = "setv(3)" value = "3" style = "position:absolute; top:80%; left:28%;">
+    <input type = "button" onclick = "setv(4)" value = "4" style = "position:absolute; top:80%; left:32%;"> 
+    <input type = "button" onclick = "setv(5)" value = "5" style = "position:absolute; top:80%; left:36%;"><br>
+    <input type = "button" onclick = "setv(6)" value = "6" style = "position:absolute; top:80%; left:40%;"> 
+    <input type = "button" onclick = "setv(7)" value = "7" style = "position:absolute; top:80%; left:44%;"> 
+    <input type = "button" onclick = "setv(8)" value = "8" style = "position:absolute; top:80%; left:48%;"> 
+    <input type = "button" onclick = "setv(9)" value = "9" style = "position:absolute; top:80%; left:52%;"> 
+    <input type = "button" onclick = "setv(0)" value = "0" style = "position:absolute; top:80%; left:56%;"><br>
+    <input type = "button" onclick = "calc(' + ',1)" value = "+" style = "position:absolute; top:80%; left:60%;">
+    <input type = "button" onclick = "calc(' - ',2)" value = "-" style = "position:absolute; top:80%; left:64%;"> 
+    <input type = "button" onclick = "calc(' * ',3)" value = "*" style = "position:absolute; top:80%; left:68%;">
+    <input type = "button" onclick = "calc(' / ',4)" value = "/" style = "position:absolute; top:80%; left:72%;">
+    <input type = "button" onclick = "calc(' % ',5)" value = "%" style = "position:absolute; top:80%; left:76%;"><br>
+    <input type = "button" onclick = "show()" value = "=" style = "position:absolute; top:92%; left:27%; width:30%;">
+    <input type = "button" onclick = "clearSet()" value = "C" style = "position:absolute; top:92%; width:10%; left:60%;">
+  <a href="about.html" style="position:absolute; top:60%; left:25%; width:15%; height: 8%; ">More about AYChat...</a>
+</body>
+</html>
