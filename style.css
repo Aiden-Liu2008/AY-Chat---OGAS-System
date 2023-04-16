@@ -1,0 +1,28 @@
+body {
+    user-select: none;
+    font-family:'monospace', Courier, monospace;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+h1 {
+    text-align: center;
+    font-size: 100px;
+} 
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+
+h4 {
+color: black;
+font-family: 'Chakra Petch', sans-serif;
+font-weight: bold;
+text-align: center;
+left:0;
+right:0;
+margin: 15;
+padding: 25px 0;
+letter-spacing: 10px;
+word-spacing: 2px;
+}
